@@ -1,0 +1,35 @@
+---
+title: Benhulse
+---
+
+<div id="wrap">
+  <h1><a id="title" href="#" title="Ben Hulse">Ben Hulse</a></h1>
+  <div id="menu">
+    <div class="menu-item">
+    	<a id="menu-design" href="#" class="menu-item-text" title="Design">Design</a>
+    </div>
+    <div class="menu-item">
+    	<a id="menu-photography" href="#" class="menu-item-text" title="Photography">Photography</a>
+    </div>
+    <div class="menu-item">
+    	<a id="menu-music" href="#" class="menu-item-text" title="Music">Music</a>
+    </div>
+    <div class="menu-item">
+    	<a id="menu-about" href="#" class="menu-item-text" title="About Ben Hulse">About Ben Hulse</a>
+    </div>
+  </div>
+  <div id="copyright">&copy; 2011 Ben Hulse</div>
+  <div id="showarea">
+    <% i = 0 %>
+    <% data.artworks.each do |artwork| %>
+    <%   i = i + 1 %>
+    <%   extraClass = "" %>
+    <%   if ((i + 1) % 4 == 1) then extraClass = "artwork-rightmost-showbox" end %>
+    <div class="artwork-showbox <%= extraClass %>">
+      <img src="<%= artwork[0] %>" alt="<%= artwork[1] %>" class="artwork-clip" />
+      <div class="artwork-title"><%= artwork[1] %></div>
+      <div class="artwork-categories"><%= artwork[2] %></div>
+    </div>
+    <% end %>
+  </div>
+</div>

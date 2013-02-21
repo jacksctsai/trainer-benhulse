@@ -1,0 +1,73 @@
+@import compass
+@import compass/reset
+@import compass/css3
+
+$default-color: #6c7072
+$default-font: "Trebuchet MS", Helvetica, sans-serif
+
+body
+  background: #7f7f7f
+
+#wrap
+  background: white
+  width: 902px
+  padding: 0 149px
+  margin: 0 auto
+
+#title
+  +hide-text
+  background: url( "/img/logo.jpg" ) no-repeat
+  border-bottom: 1px solid #c0c0c0
+  display: block
+  height: 77px
+  width: 100%
+
+.menu-item
+  float: left
+  padding: 5px 15px 5px 0
+
+.menu-item-text
+  color: $default-color
+  font-family: $default-font
+  font-size: 8px
+  text-decoration: underline
+
+#menu-about
+  text-decoration: none
+
+#showarea
+  clear: both
+  padding: 50px 0
+  overflow: hidden
+
+.artwork-showbox
+  float: left
+  width: 200px
+  padding: 0 34px 0 0
+  height: 220px
+
+.artwork-rightmost-showbox
+  padding: 0
+
+.artwork-title
+  color: #535353
+  font-family: $default-font
+  font-size: 8px
+  font-weight: lighter
+  padding: 15px 0 3px
+  text-align: center
+
+.artwork-categories
+  color: rgba( 83, 83, 83, 0.5)
+  font-family: $default-font
+  font-size: 8px
+  font-weight: lighter
+  padding: 5px 0
+  text-align: center
+
+#copyright
+  color: rgba( 83, 83, 83, 0.2)
+  font-size: 12px
+  position: relative
+  top: 620px
+  left: 650px
