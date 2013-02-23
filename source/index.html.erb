@@ -1,23 +1,23 @@
 ---
-title: Benhulse
+title: Ben Hulse
 ---
 
 <div id="wrap">
-  <h1><a id="title" href="#" title="Ben Hulse">Ben Hulse</a></h1>
-  <div id="menu">
-    <div class="menu-item">
-    	<a id="menu-design" href="#" class="menu-item-text" title="Design">Design</a>
-    </div>
-    <div class="menu-item">
-    	<a id="menu-photography" href="#" class="menu-item-text" title="Photography">Photography</a>
-    </div>
-    <div class="menu-item">
-    	<a id="menu-music" href="#" class="menu-item-text" title="Music">Music</a>
-    </div>
-    <div class="menu-item">
-    	<a id="menu-about" href="#" class="menu-item-text" title="About Ben Hulse">About Ben Hulse</a>
-    </div>
-  </div>
+  <h1 id="title"><a id="link-logo" href="#" title="Ben Hulse">Ben Hulse</a></h1>
+  <ul id="nav">
+    <li class="nav-item">
+      <a id="nav-design" href="#" class="nav-item-text" title="Design">Design</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-photography" href="#" class="nav-item-text" title="Photography">Photography</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-music" href="#" class="nav-item-text" title="Music">Music</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-about" href="#" class="nav-item-text" title="About Ben Hulse">About Ben Hulse</a>
+    </li>
+  </ul>
   <div id="copyright">&copy; 2011 Ben Hulse</div>
   <div id="showarea">
     <% i = 0 %>
@@ -26,9 +26,13 @@ title: Benhulse
     <%   extraClass = "" %>
     <%   if ((i + 1) % 4 == 1) then extraClass = "artwork-rightmost-showbox" end %>
     <div class="artwork-showbox <%= extraClass %>">
-      <img src="<%= artwork[0] %>" alt="<%= artwork[1] %>" class="artwork-clip" />
-      <div class="artwork-title"><%= artwork[1] %></div>
-      <div class="artwork-categories"><%= artwork[2] %></div>
+      <a href="#" title="<%= artwork[1] %>">
+        <img src="<%= artwork[0] %>" alt="<%= artwork[1] %>" class="artwork-clip" />
+      </a>
+      <h3 class="artwork-title">
+        <a id="link-artwork-title" href="#" title="<%= artwork[1] %>"><%= artwork[1] %></a>
+      </h3>
+      <p class="artwork-categories"><%= artwork[2] %></p>
     </div>
     <% end %>
   </div>
