@@ -1,6 +1,5 @@
 @import compass
 @import compass/reset
-@import compass/css3
 
 $default-color: #6c7072
 $default-font: Arial, Helvetica, sans-serif
@@ -11,9 +10,8 @@ $default-font: Arial, Helvetica, sans-serif
   margin: 0 auto
   width: 902px
 
-#title
+#logo-wrap
   border-bottom: 1px solid #c0c0c0
-  width: 100%
 
 #link-logo
   +hide-text
@@ -34,9 +32,8 @@ $default-font: Arial, Helvetica, sans-serif
   font-family: $default-font
   font-size: 11px
   text-decoration: underline
-
-.nav-item-text:hover
-  text-decoration: none
+  &:hover, &:active
+    text-decoration: none
 
 #nav-about
   text-decoration: none
@@ -55,6 +52,12 @@ $default-font: Arial, Helvetica, sans-serif
   height: 220px
   width: 200px
 
+.artwork-clip-link
+  display: block
+
+.artwork-clip-link
+  display: block
+
 .artwork-rightmost-showbox
   padding: 0
 
@@ -62,7 +65,6 @@ $default-font: Arial, Helvetica, sans-serif
   color: #535353
   font-family: $default-font
   font-size: 11px
-  font-weight: lighter
   padding: 15px 0 3px
   text-align: center
 
@@ -70,16 +72,17 @@ $default-font: Arial, Helvetica, sans-serif
   text-decoration: none
 
 .artwork-categories
-  color: rgba( 83, 83, 83, 0.5)
+  color: #535353
+  opacity: 0.5
   font-family: $default-font
   font-size: 10px
-  font-weight: lighter
   padding: 5px 0
   text-align: center
 
 #copyright
-  color: rgba( 83, 83, 83, 0.2)
+  color: #535353
+  opacity: 0.5
   font-size: 12px
+  top: 620px
   left: 1090px
   position: absolute
-  top: 620px

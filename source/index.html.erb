@@ -3,7 +3,9 @@ title: Ben Hulse
 ---
 
 <div id="wrap">
-  <h1 id="title"><a id="link-logo" href="#" title="Ben Hulse">Ben Hulse</a></h1>
+  <h1 id="loop-wrap">
+    <a id="link-logo" href="#" title="Ben Hulse">Ben Hulse</a>
+  </h1>
   <ul id="nav">
     <li class="nav-item">
       <a id="nav-design" href="#" class="nav-item-text" title="Design">Design</a>
@@ -26,7 +28,7 @@ title: Ben Hulse
     <%   extraClass = "" %>
     <%   if ((i + 1) % 4 == 1) then extraClass = "artwork-rightmost-showbox" end %>
     <div class="artwork-showbox <%= extraClass %>">
-      <a href="#" title="<%= artwork[1] %>">
+      <a class="artwork-clip-link" href="#" title="<%= artwork[1] %>">
         <img src="<%= artwork[0] %>" alt="<%= artwork[1] %>" class="artwork-clip" />
       </a>
       <h3 class="artwork-title">
